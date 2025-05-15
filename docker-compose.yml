@@ -1,0 +1,15 @@
+services:
+  certicopter:
+    build: .
+    #env_file:
+    #  - .env
+    volumes:
+      - files:/home/appuser/certicopter/files
+    environment:
+      - CERTIFICATE_OUTPUT_DIR=/home/appuser/certicopter/files/certificates
+      - LOG_OUTPUT_DIR=/home/appuser/certicopter/files/logs/app.log
+    working_dir: /home/appuser/certicopter
+
+volumes:
+  files:
+
