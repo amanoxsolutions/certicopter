@@ -54,7 +54,7 @@ By supporting multiple systems, it simplifies certificate management for develop
 * Maintain strong HTTPS security standards
 * Save time with reliable automation
 * Standardize renewal workflows across different platforms
-* Centralized management certificates and logging
+* Centralized management for certificates and logging
 * No SPOF due to wildcard certificates (each instance get's a unique domain specific certificate)
 * Easily scalable
 
@@ -95,12 +95,12 @@ Follow these steps to get the tool up and running:
 
 > ⚠️ **Important:** Certicopter does not provide built-in interfaces for resolving or securing credentials. All sensitive information - such as passwords, usernames, domain names, API tokens, and similar - is expected to be supplied via environment variables. The mechanism responsible for storing and providing these environment variables must be maintained by the user.
 
-> As part of the guided setup, users receive a template tailored to their requirements. This template includes a checklist of the necessary environment variables but does not handle their the provisioning or secure storage.
+> As part of the setup, users receive a template tailored to their requirements. This template includes a checklist of the necessary environment variables but does not handle the provisioning or secure storage.
 
 3. **Network Requirements**
    - HTTPS/HTTP access to target systems
    - DNS resolution for target domains
-   - Port access (varies by system and you configurations, typically 80, 443, 8443, 9440, 9443)
+   - Port access (varies by system and your configurations, typically 80, 443, 8443, 9440, 9443)
 
 ### Setup
 
@@ -184,7 +184,7 @@ To ensure your SSL certificates are automatically renewed before they expire, yo
 
 ### Configuration
 
-The application uses a JSON-based configuration file (`config.json`) with the following example structure (generated automatically with the guided setup process):
+The application uses a JSON-based configuration file (`config.json`) with the following example structure (generated automatically with the setup process):
 
 ```json
 {
