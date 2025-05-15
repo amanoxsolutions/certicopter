@@ -1,0 +1,27 @@
+# Python virtual environments and build artifacts
+/bin
+/ENV_DIR
+/include
+/lib64
+/lib
+/share
+/pyvenv.cfg
+/.venv
+/wslvenv/
+*pyc
+
+# Application logs
+app.log
+crash.log
+crash.*.log
+
+# IDE and editor settings
+.vscode/
+
+# Configuration and secrets
+.env
+*.env
+SSL_Certificate_App/config.json
+
+# Experimental code
+/experimental
